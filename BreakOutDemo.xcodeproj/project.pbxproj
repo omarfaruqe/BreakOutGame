@@ -15,6 +15,10 @@
 		425936C71CAE0AC2001ADF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425936C51CAE0AC2001ADF6C /* Main.storyboard */; };
 		425936C91CAE0AC2001ADF6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425936C81CAE0AC2001ADF6C /* Assets.xcassets */; };
 		425936CC1CAE0AC2001ADF6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425936CA1CAE0AC2001ADF6C /* LaunchScreen.storyboard */; };
+		425936D41CAE2012001ADF6C /* GameStart.sks in Resources */ = {isa = PBXBuildFile; fileRef = 425936D31CAE2012001ADF6C /* GameStart.sks */; };
+		425936D61CAE2038001ADF6C /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 425936D51CAE2038001ADF6C /* GameOver.sks */; };
+		425936D91CAE2120001ADF6C /* GameStart.m in Sources */ = {isa = PBXBuildFile; fileRef = 425936D81CAE2120001ADF6C /* GameStart.m */; };
+		425936DC1CAE2136001ADF6C /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 425936DB1CAE2136001ADF6C /* GameOver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,12 @@
 		425936C81CAE0AC2001ADF6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425936CB1CAE0AC2001ADF6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425936CD1CAE0AC2001ADF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425936D31CAE2012001ADF6C /* GameStart.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStart.sks; sourceTree = "<group>"; };
+		425936D51CAE2038001ADF6C /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
+		425936D71CAE2120001ADF6C /* GameStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStart.h; sourceTree = "<group>"; };
+		425936D81CAE2120001ADF6C /* GameStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStart.m; sourceTree = "<group>"; };
+		425936DA1CAE2136001ADF6C /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
+		425936DB1CAE2136001ADF6C /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +75,15 @@
 			children = (
 				425936BA1CAE0AC2001ADF6C /* AppDelegate.h */,
 				425936BB1CAE0AC2001ADF6C /* AppDelegate.m */,
+				425936C01CAE0AC2001ADF6C /* GameScene.sks */,
 				425936BD1CAE0AC2001ADF6C /* GameScene.h */,
 				425936BE1CAE0AC2001ADF6C /* GameScene.m */,
-				425936C01CAE0AC2001ADF6C /* GameScene.sks */,
+				425936D31CAE2012001ADF6C /* GameStart.sks */,
+				425936D71CAE2120001ADF6C /* GameStart.h */,
+				425936D81CAE2120001ADF6C /* GameStart.m */,
+				425936D51CAE2038001ADF6C /* GameOver.sks */,
+				425936DA1CAE2136001ADF6C /* GameOver.h */,
+				425936DB1CAE2136001ADF6C /* GameOver.m */,
 				425936C21CAE0AC2001ADF6C /* GameViewController.h */,
 				425936C31CAE0AC2001ADF6C /* GameViewController.m */,
 				425936C51CAE0AC2001ADF6C /* Main.storyboard */,
@@ -145,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				425936C11CAE0AC2001ADF6C /* GameScene.sks in Resources */,
+				425936D61CAE2038001ADF6C /* GameOver.sks in Resources */,
 				425936CC1CAE0AC2001ADF6C /* LaunchScreen.storyboard in Resources */,
+				425936D41CAE2012001ADF6C /* GameStart.sks in Resources */,
 				425936C91CAE0AC2001ADF6C /* Assets.xcassets in Resources */,
 				425936C71CAE0AC2001ADF6C /* Main.storyboard in Resources */,
 			);
@@ -158,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425936D91CAE2120001ADF6C /* GameStart.m in Sources */,
 				425936C41CAE0AC2001ADF6C /* GameViewController.m in Sources */,
 				425936BC1CAE0AC2001ADF6C /* AppDelegate.m in Sources */,
+				425936DC1CAE2136001ADF6C /* GameOver.m in Sources */,
 				425936BF1CAE0AC2001ADF6C /* GameScene.m in Sources */,
 				425936B91CAE0AC2001ADF6C /* main.m in Sources */,
 			);
