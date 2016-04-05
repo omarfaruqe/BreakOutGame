@@ -33,6 +33,7 @@ static const uint32_t category_ball     = 0x1 << 0;
     
     SKSpriteNode *background = (SKSpriteNode *)[self childNodeWithName:@"GameScene"];
     background.zPosition = 0;
+    background.lightingBitMask = 0x1;
     
     SKSpriteNode *ball1 = [SKSpriteNode spriteNodeWithImageNamed:@"ball"];
     ball1.name = @"Ball1";
@@ -53,6 +54,15 @@ static const uint32_t category_ball     = 0x1 << 0;
     ball1.physicsBody.contactTestBitMask = category_fence | category_block;
     ball1.physicsBody.usesPreciseCollisionDetection = YES;
     [self addChild:ball1];
+    
+    SKLightNode *light = [SKLightNode new];
+    light.categoryBitMask = 0x1;
+    light.falloff = 1;
+    light.ambientColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
+    light.lightColor = [UIColor colorWithRed:0.7 green:0.7 blue:1.0 alpha:1.0];
+    light.shadowColor = [[UIColor alloc] initWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+    light.zPosition = 1;
+    [ball1 addChild:light];
     
     SKSpriteNode *ball2 = [SKSpriteNode spriteNodeWithImageNamed:@"ball"];
     ball2.name = @"Ball2";
