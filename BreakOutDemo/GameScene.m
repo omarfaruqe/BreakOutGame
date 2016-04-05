@@ -30,17 +30,31 @@
     SKSpriteNode *ball2 = [SKSpriteNode spriteNodeWithImageNamed:@"ball"];
     ball2.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:ball2.size.width / 2];
     ball2.physicsBody.dynamic = YES;
-    ball2.position = CGPointMake(300, self.size.height / 2);
+    ball2.position = CGPointMake(150, self.size.height / 2);
     ball2.physicsBody.friction = 0.0;
     ball2.physicsBody.restitution = 1.0;
     ball2.physicsBody.linearDamping = 0.0;
     ball2.physicsBody.angularDamping = 0.0;
     ball2.physicsBody.allowsRotation = NO;
     ball2.physicsBody.mass = 1.0;
-    ball2.physicsBody.velocity = CGVectorMake(0.0, 220.0);
+    ball2.physicsBody.velocity = CGVectorMake(0.0, 0.0);
+    
+    
+    SKSpriteNode *paddle = [SKSpriteNode spriteNodeWithImageNamed:@"paddle"];
+    paddle.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:paddle.size.width / 2];
+    paddle.physicsBody.dynamic = NO;
+    paddle.position = CGPointMake(self.size.width / 2, 100);
+    paddle.physicsBody.friction = 0.0;
+    paddle.physicsBody.restitution = 1.0;
+    paddle.physicsBody.linearDamping = 0.0;
+    paddle.physicsBody.angularDamping = 0.0;
+    paddle.physicsBody.allowsRotation = NO;
+    paddle.physicsBody.mass = 1.0;
+    paddle.physicsBody.velocity = CGVectorMake(0.0, 0.0);
     
     [self addChild:ball1];
     [self addChild:ball2];
+    [self addChild:paddle];
     
     CGPoint ball1Anchor = CGPointMake(ball1.position.x, ball1.position.y);
     CGPoint ball2Anchor = CGPointMake(ball2.position.x, ball2.position.y);
